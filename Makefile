@@ -2,7 +2,7 @@ build:
 	./build.sh
 
 install:
-	uv pip install -r requirements.txt
+	uv pip install .
 
 collectstatic:
 	uv run python manage.py collectstatic --noinput
