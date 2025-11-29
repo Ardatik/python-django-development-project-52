@@ -12,4 +12,4 @@ migrate:
 	uv run python manage.py migrate
 
 render-start:
-	uv run gunicorn task_manager.wsgi
+	gunicorn task_manager.task_manager.wsgi
