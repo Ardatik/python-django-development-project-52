@@ -32,7 +32,8 @@ DEBUG = os.getenv("DEBUG")
 ALLOWED_HOSTS = [
     "webserver",
     "127.0.0.1",
-    "https://python-django-development-project-52.onrender.com",
+    "localhost",
+    "python-django-development-project-52.onrender.com"
 ]
 
 
