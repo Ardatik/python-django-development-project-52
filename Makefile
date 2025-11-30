@@ -1,3 +1,5 @@
+.PHONY: build install collectstatic migrate render-start
+
 build:
 	./build.sh
 
@@ -12,4 +14,4 @@ migrate:
 	uv run python manage.py migrate
 
 render-start:
-	gunicorn task_manager.wsgi
+	uv run gunicorn task_manager.wsgi
